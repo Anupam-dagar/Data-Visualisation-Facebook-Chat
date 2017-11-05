@@ -9,3 +9,10 @@ Python Script to visualise your facebook chat with a person
   - count.csv contains "count of messages on a particular day" in unsorted manner
   - sorted.csv contains sorted data sorted in ascending order of date
 - Finally run plotdata.py to get the result
+
+## Dependencies
+- Pandas
+- Numpy
+- Matplotlib
+- Python-tk
+- Beautiful Soup
