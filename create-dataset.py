@@ -24,5 +24,7 @@ def count_messages_bydate():
     ab['date'] = pd.to_datetime(ab.date)
     ab.sort_values('date').to_csv("sorted.csv", header=True)
 
-write_to_csv(<INPUT FILE NAME HERE>)
+filename = str(raw_input("Please enter filename of your fbchat, it must be a HTML file: "))
+write_to_csv(filename)
 count_messages_bydate()
+print "Required dataset is created"
