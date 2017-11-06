@@ -4,7 +4,7 @@ Python Script to visualise your facebook chat with a person
 # Steps: 
 ## It requires that you have requested a copy of your data from facebook.(facebook settings -> general -> download a copy of your data)
 - Your chat will be in a HTML file.
-- create-dataset.py will generate the required csv files.
+- createdataset.py will generate the required csv files.
   - chatdata.csv contains "date of sent messages"
   - count.csv contains "count of messages on a particular day" in unsorted manner
   - sorted.csv contains sorted data sorted in ascending order of date
