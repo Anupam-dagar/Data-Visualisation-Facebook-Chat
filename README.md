@@ -10,6 +10,9 @@ Python Script to visualise your facebook chat with a person
   - sorted.csv contains sorted data sorted in ascending order of date
 - Only run plotdata.py.It will create the dataset and show the result
 
+# Result:
+![Output](https://github.com/Anupam-dagar/Data-Visualisation-Facebook-Chat/blob/master/plot.png?raw=true)
+
 ## Dependencies
 - Pandas
 - Numpy
