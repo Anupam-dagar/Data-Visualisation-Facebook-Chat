@@ -11,6 +11,8 @@ Python Script to visualise your facebook chat with a person
 - Only run plotdata.py.It will create the dataset and show the result
 
 # Result:
+- X-axis: Day and date
+- Y-axis: No. of messages sent and received on that day.
 ![Output](https://github.com/Anupam-dagar/Data-Visualisation-Facebook-Chat/blob/master/plot.png?raw=true)
 
 ## Dependencies
