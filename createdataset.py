@@ -6,7 +6,7 @@ def write_to_csv(filename):
     csvfile.writerow(["date"])
     with open(filename) as fp:
         soup = BeautifulSoup(fp, 'lxml')
-    dates = soup.findAll(attrs={'class' : 'meta'})
+    dates = soup.findAll('span', {'class' : 'meta'})
     for date in dates:
         data = date.contents[0].split(",", 1)
         data = data[1].split("at")
