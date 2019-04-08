@@ -1,20 +1,17 @@
 import csv
 import pandas as pd
 from bs4 import BeautifulSoup
+
 def write_to_csv(filename):
     csvfile = csv.writer(open("chatdata.csv", "w"))
     csvfile.writerow(["date"])
     with open(filename) as fp:
         soup = BeautifulSoup(fp, 'lxml')
-    dates = soup.findAll('span', {'class' : 'meta'})
+    dates = soup.findAll('div', {'class' : 'uiBoxWhite'})
+    dates = soup.select('div.uiBoxWhite')
     for date in dates:
-        data = date.contents[0].split(",", 1)
-        data = data[1].split("at")
-        data = str(data[0])
-        data = data.split(",")
-        data = " ".join(data)
-        data = data.split(" ")
-        data = " ".join(data)
+        data = date.select('div')[-1].text
+        data = ''.join(data.split(',')[:2])
         csvfile.writerow([data])
 
 def count_messages_bydate():
